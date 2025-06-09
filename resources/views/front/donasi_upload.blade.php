@@ -1,22 +1,33 @@
 @extends('partials.front')
-@section('title', 'rekening donasi')
+@section('title', 'Konfirmasi Donasi')
 @section('content')
-<main id="main">
 
 <!-- ======= Banner Section ======= -->
 <section class="page-banner" style="position: relative; height: 100vh; background: url('{{ asset('asset/img/mccbg.png') }}') center center no-repeat; background-size: cover;">
     <div class="overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.4);"></div>
     <div class="container d-flex align-items-center justify-content-center h-100">
         <h1 class="text-white text-center fw-bold display-3" style="z-index: 2; position: relative; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
-            Rekening Donasi
+            Konfirmasi Donasi
         </h1>
-        <a href="#rekening" class="scroll-down-icon" style="position: absolute; bottom: 30px; z-index: 2; text-decoration: none;">
+        <a href="#main" class="scroll-down-icon" style="position: absolute; bottom: 30px; z-index: 2; text-decoration: none;">
             <i class="fas fa-chevron-down" style="font-size: 2rem; color: white; animation: bounce 2s infinite;"></i>
         </a>
     </div>
 </section>
 
 <style>
+    @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(10px); 
+    }
+    60% {
+        transform: translateY(5px); 
+    }
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
     40% { transform: translateY(10px); }
@@ -111,16 +122,18 @@
 .arrow.rotate {
     transform: rotate(180deg);
 }
+
 </style>
+<!-- ======= End Banner Section ======= -->
 
-<!-- ======= Rekening & QR Section ======= -->
-<section id="rekening" class="my-5">
-    <div class="container" data-aos="fade-up">
-        <header class="section-header mb-5">
-            <p class="fs-2 fw-bold text-center" style="color: #2a4d69;">Informasi Rekening</p>
-        </header>
+<div class="container py-5">
+    <h3 class="mb-4 text-center">Konfirmasi Donasi</h3>
 
-        <div class="row g-4">
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+
+    <div class="row g-4">
             <!-- Kolom Kiri: Daftar Rekening -->
             <div class="col-md-5">
                 <div class="d-flex flex-column gap-3">
@@ -140,54 +153,15 @@
             </div>
 
 
-        <!-- Accordion Start -->
-        <div class="styled-accordion mt-5">
-            <div class="accordion-box">
-                <header class="section-header mb-5">
-                  <p class="fs-2 fw-bold text-center" style="color: #2a4d69;">Langkah-langkah melakukan donasi</p>
-                </header>
-                <div class="accordion-title">
-                    <span>Langkah Pertama</span>
-                    <span class="arrow">&#9660;</span>
-                </div>
-                <div class="accordion-content">
-                    <p>Isi konten pertama. Ubah sesuai kebutuhan kamu.</p>
-                </div>
-            </div>
-            <div class="accordion-box">
-                <div class="accordion-title">
-                    <span>Langkah Kedua</span>
-                    <span class="arrow">&#9660;</span>
-                </div>
-                <div class="accordion-content">
-                    <p>Konten kedua bisa kamu isi dengan informasi penting lainnya.</p>
-                </div>
-            </div>
-            <div class="accordion-box">
-                <div class="accordion-title">
-                    <span>Langkah Ketiga</span>
-                    <span class="arrow">&#9660;</span>
-                </div>
-                <div class="accordion-content">
-                    <p>Konten ketiga di sini. Formatnya fleksibel, bisa HTML lainnya juga.</p>
-                </div>
-            </div>
+    <form action="{{ route('donasi.save') }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="mb-3">
+            <label for="foto" class="form-label">Upload Bukti Transfer</label>
+            <input type="file" name="foto" class="form-control" required>
         </div>
-        <!-- Accordion End -->
+    
+        <button type="submit" class="btn btn-success w-100 py-3">Simpan Donasi</button>
+    </form>
+</div>
 
-    </div>
-</section>
-
-</main>
-
-<script>
-document.querySelectorAll('.accordion-title').forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        const arrow = header.querySelector('.arrow');
-        content.classList.toggle('open');
-        arrow.classList.toggle('rotate');
-    });
-});
-</script>
 @endsection
