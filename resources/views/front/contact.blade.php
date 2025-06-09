@@ -50,11 +50,11 @@
 
                             <div class="col-md-6">
                                 <div class="info-box">
-                                    <a href="https://wa.me/qr/22SPDVIQWOTNE1" target="_blank" class="text-success text-decoration-none">
+                                    <a href="https://wa.me/qr/" target="_blank" class="text-success text-decoration-none">
                                         <i class="bi bi-telephone"></i>
                                     </a>
                                 <h3>Hubungi Kami</h3>
-                                <p>0823 3435 4865</p>
+                                <p>0857-7123-8693</p>
                             </div>
                             </div>
                             <div class="col-md-6">
