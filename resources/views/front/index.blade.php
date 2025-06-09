@@ -198,7 +198,7 @@
     </style>
 
 <!-- ======= Informasi Section ======= -->
-<section id='bnnr1' class="info-section position-relative" style="background: url('{{ asset('asset/img/bnnr2.jpg') }}') center center / cover no-repeat; height: 100vh; color: white;">
+<section id='bnnr1' class="info-section position-relative" style="background: url('{{ asset('asset/img/bnnr17.jpg') }}') center center / cover no-repeat; height: 100vh; color: white;">
     <div class="overlay" style="position:absolute; top:0; left:0; right:0; bottom:0; background-color: rgba(0,0,0,0.6); z-index:1;"></div>
     
     <div class="container h-100 d-flex align-items-center" style="position: relative; z-index: 2;">
@@ -216,7 +216,7 @@
         <i class="fas fa-chevron-down fa-2x" style="color: white; animation: bounce 2s infinite;"></i>
     </a>
 </section>
-<section id='bnnr1' class="info-section position-relative" style="background: url('{{ asset('asset/img/bnnr1.jpg') }}') center center / cover no-repeat; height: 100vh; color: white;">
+<section id='bnnr1' class="info-section position-relative" style="background: url('{{ asset('asset/img/bnnr18.jpg') }}') center center / cover no-repeat; height: 100vh; color: white;">
     <div class="overlay" style="position:absolute; top:0; left:0; right:0; bottom:0; background-color: rgba(0,0,0,0.6); z-index:1;"></div>
     
     <div class="container h-100 d-flex align-items-center" style="position: relative; z-index: 2;">
