@@ -130,7 +130,7 @@
             <a href="../dashboard/index.html" class="b-brand text-primary">
                 <!-- ========   Change your logo from here   ============ -->
                 <img src="{{ asset('/asset/img/LKSA_logo_putih.png') }}" width="55" height="50"
-                    alt="Muhammadiyyah Centre Childern">
+                    alt="Muhammadiyah Centre Childern">
             </a>
         </div>
         <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
