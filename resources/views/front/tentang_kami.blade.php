@@ -7,7 +7,7 @@
 <section class="page-banner" style="position: relative; height: 100vh; background: url('{{ asset('asset/img/bnnr5.jpeg') }}') center center no-repeat; background-size: cover;">
     <div class="overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.4);"></div>
     <div class="container d-flex align-items-center justify-content-center h-100">
-        <h1 class="text-white text-center fw-bold display-3" style="z-index: 2; position: relative; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+        <h1 class="text-white text-center fw-bold display-1" style="z-index: 2; position: relative; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
             Tentang kami
         </h1>
         <a href="#main" class="scroll-down-icon" style="position: absolute; bottom: 30px; z-index: 2; text-decoration: none;">
