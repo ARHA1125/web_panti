@@ -77,7 +77,7 @@
                                 Donasi
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('validasi_donasi') }}">Rekening Donasi</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('rekening_donasi') }}">Rekening Donasi</a></li>
                                     <li><a class="dropdown-item" href="{{ route('front.donasi.form') }}">Form Donasi</a></li>
                                     <li><a class="dropdown-item" href="{{ route('laporan_donasi') }}">Laporan Donasi</a></li>
                                 </ul>

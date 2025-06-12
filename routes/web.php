@@ -34,12 +34,15 @@ Route::get('/kepengurusan', function () {
     return view('front.kepengurusan');
 })->name('kepengurusan');
 Route::get('/anak-asuh', [AnakAsuhController::class, 'showFrontend'])->name('anak-asuh');
-Route::get('/rekening-donasi', function () {
+
+Route::get('/form-donasi', function () {
     return view('front.rekening_donasi');
 })->name('front.donasi.form');
-Route::get('/validasi_donasi', function () {
-    return view('front.validasi_donasi');
-})->name('validasi_donasi');
+
+Route::get('/rekening_donasi', function () {
+    return view('front.rekening-donasi');
+})->name('rekening_donasi');
+
 Route::get('/laporan_donasi', [DonasiController::class, 'laporan'])->name('laporan_donasi');
 Route::get('/tentang-kami', function () {
     return view('front.tentang_kami');
@@ -87,7 +90,7 @@ Route::middleware(['auth'])->group(function () {
     
 // ✅ Route donasi publik
 Route::get('/donasi', [DonasiController::class, 'create'])->name('donasi.form');
-Route::post('/rekening-donasi', [DonasiController::class, 'store'])->name('front.donasi.store');
+Route::post('/form-donasi', [DonasiController::class, 'store'])->name('front.donasi.store');
 Route::get('/donasi/upload', [DonasiController::class, 'showUploadForm'])->name('donasi.upload');
 Route::post('/donasi/save', [DonasiController::class, 'uploadFoto'])->name('donasi.save');
 

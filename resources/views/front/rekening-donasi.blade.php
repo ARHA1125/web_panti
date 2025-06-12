@@ -151,7 +151,7 @@
                     <span class="arrow">&#9660;</span>
                 </div>
                 <div class="accordion-content">
-                    <p>Donasi bisa melakukan transfer pada rekening bank yang sudah tertera pada menu randening donasi</p>
+                    <p>Anda bisa melakukan doansi terlebih dahulu dan donasi bisa melakukan transfer pada rekening bank yang sudah tertera pada menu rekening donasi</p>
                 </div>
             </div>
             <div class="accordion-box">
@@ -161,6 +161,7 @@
                 </div>
                 <div class="accordion-content">
                     <p>Pergi ke bagian from donasi, isikan data diri anda dan nominal donasi yang akan anda donasikan. Lalu klik konfirmasi</p>
+                    <img src="{{ asset('/asset/img/contoh_donasi.png') }}" alt="Rekening Donasi" style="max-width:100%; height:auto; margin-top:10px;">
                 </div>
             </div>
             <div class="accordion-box">
@@ -170,6 +171,7 @@
                 </div>
                 <div class="accordion-content">
                     <p>Setelah anda menekan  konfirmasi, anda akan diarahkan ke bagian konfirmasi donasi, di menu ini anda akan diminta mengirim bukti transfer.</p>
+                    <img src="{{ asset('/asset/img/contoh_donasi2.png') }}" alt="Rekening Donasi" style="max-width:100%; height:auto; margin-top:10px;">
                 </div>
             </div>
             <div class="accordion-box">
@@ -179,6 +181,7 @@
                 </div>
                 <div class="accordion-content">
                     <p>Setelah melakukan semua langkah-langkah sebelumnya, nama anda akan otomatis muncul di bagian/menu laporan donasi</p>
+                    <img src="{{ asset('/asset/img/contoh_donasi3.png') }}" alt="Rekening Donasi" style="max-width:100%; height:auto; margin-top:10px;">
                 </div>
             </div>
         </div>

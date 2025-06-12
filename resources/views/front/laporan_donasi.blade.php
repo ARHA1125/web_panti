@@ -46,19 +46,19 @@
         <table class="table table-bordered table-striped align-middle">
             <thead class="table-dark text-center">
                 <tr>
-                    <th>ID</th>
                     <th>Nama</th>
                     <th>Nominal</th>
                     <th>Tanggal</th>
+                    <th>Pesan</th>
                 </tr>
             </thead>
             <tbody>
                 @forelse ($donasis as $donasi)
                     <tr class="text-center">
-                        <td>{{ $donasi->id }}</td>
                         <td>{{ $donasi->nama }}</td>
                         <td>Rp{{ number_format($donasi->nominal, 0, ',', '.') }}</td>
                         <td>{{ $donasi->created_at->format('d-m-Y') }}</td>
+                        <td>{{ $donasi->keterangan }}</td>
                     </tr>
                 @empty
                     <tr>
