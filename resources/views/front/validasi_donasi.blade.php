@@ -151,7 +151,7 @@
                     <span class="arrow">&#9660;</span>
                 </div>
                 <div class="accordion-content">
-                    <p>Isi konten pertama. Ubah sesuai kebutuhan kamu.</p>
+                    <p>Donasi bisa melakukan transfer pada rekening bank yang sudah tertera pada menu randening donasi</p>
                 </div>
             </div>
             <div class="accordion-box">
@@ -160,7 +160,7 @@
                     <span class="arrow">&#9660;</span>
                 </div>
                 <div class="accordion-content">
-                    <p>Konten kedua bisa kamu isi dengan informasi penting lainnya.</p>
+                    <p>Pergi ke bagian from donasi, isikan data diri anda dan nominal donasi yang akan anda donasikan. Lalu klik konfirmasi</p>
                 </div>
             </div>
             <div class="accordion-box">
@@ -169,7 +169,16 @@
                     <span class="arrow">&#9660;</span>
                 </div>
                 <div class="accordion-content">
-                    <p>Konten ketiga di sini. Formatnya fleksibel, bisa HTML lainnya juga.</p>
+                    <p>Setelah anda menekan  konfirmasi, anda akan diarahkan ke bagian konfirmasi donasi, di menu ini anda akan diminta mengirim bukti transfer.</p>
+                </div>
+            </div>
+            <div class="accordion-box">
+                <div class="accordion-title">
+                    <span>Langkah Keempat</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Setelah melakukan semua langkah-langkah sebelumnya, nama anda akan otomatis muncul di bagian/menu laporan donasi</p>
                 </div>
             </div>
         </div>
