@@ -67,7 +67,7 @@
             <div class="m-header">
                 <a href="../dashboard/index.html" class="b-brand text-primary">
                     <!-- ========   Change your logo from here   ============ -->
-                    <img src="{{ asset('/asset/img/logohmn.png') }}" width="150" height="60"
+                    <img src="{{ asset('/asset/img/LKSA_logo_putih.png') }}" width="150" height="60"
                         alt="Muhammadiyya Centre Childern">
                 </a>
             </div>
@@ -129,7 +129,7 @@
         <div class="m-header">
             <a href="../dashboard/index.html" class="b-brand text-primary">
                 <!-- ========   Change your logo from here   ============ -->
-                <img src="{{ asset('/asset/img/logomcc.png') }}" width="60" height="50"
+                <img src="{{ asset('/asset/img/LKSA_logo_putih.png') }}" width="60" height="50"
                     alt="Muhammadiyyah Centre Childern">
             </a>
         </div>
@@ -272,6 +272,7 @@
         header_change("header-1");
     </script>
 
+    @yield('scripts')
 </body>
 <!-- [Body] end -->
 

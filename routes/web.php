@@ -12,6 +12,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ManagementController;
 use App\Http\Controllers\DonasiController;
 use App\Models\AnakAsuh;
+use App\Http\Controllers\RekapDonasiController;
 
 
 /*
@@ -39,10 +40,13 @@ Route::get('/rekening-donasi', function () {
 Route::get('/validasi_donasi', function () {
     return view('front.validasi_donasi');
 })->name('validasi_donasi');
-Route::get('/laporan_donasi', function () {
-    return view('front.laporan_donasi');
-})->name('laporan_donasi');
-
+Route::get('/laporan_donasi', [DonasiController::class, 'laporan'])->name('laporan_donasi');
+Route::get('/tentang-kami', function () {
+    return view('front.tentang_kami');
+});
+Route::get('/contact', function () {
+    return view('front.contact');
+});
 
 // ✅ Route publik (tidak perlu login)
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
@@ -73,10 +77,17 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('managements', ManagementController::class);
     Route::get('/donasi/list', [DonasiController::class, 'index'])->name('donasi.index');
+    Route::get('/donasi', [DonasiController::class, 'index'])->name('donasi.index');
+    Route::post('/donasi/store', [DonasiController::class, 'store'])->name('donasi.store');
+    Route::get('/laporan-donasi', [DonasiController::class, 'laporan'])->name('donasi.laporan');
+    Route::delete('/donasi/{donasi}', [DonasiController::class, 'destroy'])->name('donasi.destroy');
+    Route::get('/admin/rekap-donasi', [RekapDonasiController::class, 'index'])->name('rekap.index');
+    
 });
     
 // ✅ Route donasi publik
 Route::get('/donasi', [DonasiController::class, 'create'])->name('donasi.form');
 Route::post('/rekening-donasi', [DonasiController::class, 'store'])->name('front.donasi.store');
-
+Route::get('/donasi/upload', [DonasiController::class, 'showUploadForm'])->name('donasi.upload');
+Route::post('/donasi/save', [DonasiController::class, 'uploadFoto'])->name('donasi.save');
 

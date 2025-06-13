@@ -358,6 +358,35 @@ section {
   }
 }
 
+/* Header Transparan Seperti GE Aerospace */
+.transparent-header {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 997;
+}
+
+.transparent-header .navbar a,
+.transparent-header .navbar .getstarted {
+  color: #fff;
+}
+
+.transparent-header .navbar a:hover,
+.transparent-header .navbar .active {
+  color: #cfd9ff;
+}
+
+.transparent-header .navbar .getstarted {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.transparent-header .navbar .getstarted:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
 /**
 * Mobile Navigation 
 */

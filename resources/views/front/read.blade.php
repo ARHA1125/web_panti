@@ -1,21 +1,36 @@
 @extends('partials.front')
 @section('title', 'Read Article')
 @section('content')
+
+<!-- ======= Banner Section ======= -->
+<section class="page-banner" style="position: relative; height: 100vh; background: url('{{ asset('asset/img/mccbg.png') }}') center center no-repeat; background-size: cover;">
+    <div class="overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.4);"></div>
+    <div class="container d-flex align-items-center justify-content-center h-100">
+        <h1 class="text-white text-center fw-bold display-3" style="z-index: 2; position: relative; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+            Blog
+        </h1>
+        <a href="#main" class="scroll-down-icon" style="position: absolute; bottom: 30px; z-index: 2; text-decoration: none;">
+            <i class="fas fa-chevron-down" style="font-size: 2rem; color: white; animation: bounce 2s infinite;"></i>
+        </a>
+    </div>
+</section>
+
+<style>
+    @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(10px); 
+    }
+    60% {
+        transform: translateY(5px); 
+    }
+}
+</style>
+<!-- ======= End Banner Section ======= -->
+
     <main id="main">
-
-        <!-- ======= Breadcrumbs ======= -->
-        <section class="breadcrumbs">
-            <div class="container">
-
-                <ol>
-                    <li><a href="{{ route('beranda') }}">Home</a></li>
-                    <li><a href="{{ route('show-blog') }}">Blog</a></li>
-                    <li>Read Article</li>
-                </ol>
-                <h2>Read Article </h2>
-
-            </div>
-        </section><!-- End Breadcrumbs -->
 
         <!-- ======= Blog Single Section ======= -->
         <section id="blog" class="blog">

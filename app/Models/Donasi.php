@@ -14,6 +14,7 @@ class Donasi extends Model
         'alamat',
         'no_hp',
         'email',
+        'foto',
         'keterangan',
     ];
 }

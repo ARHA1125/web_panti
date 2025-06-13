@@ -134,4 +134,6 @@ class BlogController extends Controller
         $data->delete();
         return redirect()->route('blog.index')->with('toast_success', 'Data Berhasil Dihapus');
     }
+
+    
 }
