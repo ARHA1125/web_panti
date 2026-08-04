@@ -50,18 +50,21 @@
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header transparent-header">
-        <div class="tw-head">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand tw-nav-brand d-flex align-items-center" href="{{ route('beranda') }}">
-                        <img src="{{ asset('/asset/img/LKSA_logo_putih.png') }}" width="70" height="70" alt="Muhammadiyyah Centre Children">
-                        <div class="ms-2">
-                            <span class="d-block fw-bold" style="font-size: 20px;">LKSA PUTRI MUHAMMADIYAH</span>
-                            <span class="d-block" style="font-size: 16px; text-transform: uppercase; letter-spacing: 1px;">
-                                Darul Istiqomah Pasirian
-                            </span>
-                        </div>
-                    </a>
+    <div class="tw-head">
+        <!-- 'container' diubah menjadi 'container-fluid px-4 px-lg-5' -->
+        <div class="container-fluid px-4 px-lg-5">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand tw-nav-brand d-flex align-items-center" href="{{ route('beranda') }}">
+                    <img src="{{ asset('/asset/img/LKSA_logo_putih.png') }}" width="70" height="70" alt="Muhammadiyyah Centre Children">
+                    <div class="ms-2">
+                        <span class="d-block fw-bold" style="font-size: 20px;">LKSA PUTRI MUHAMMADIYAH</span>
+                        <span class="d-block" style="font-size: 16px; text-transform: uppercase; letter-spacing: 1px;">
+                            Darul Istiqomah Pasirian
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Sisa kode navbar Anda di bawah ini (button toggler & menu items) -->
                     
 
                     <nav id="navbar" class="navbar">
@@ -72,7 +75,7 @@
                             <hr>
                             <li><a class="nav-link" href="{{ route('anak-asuh') }}">Anak Asuh</a></li>
                             <hr>
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Donasi
                                 </a>
@@ -81,7 +84,7 @@
                                     <li><a class="dropdown-item" href="{{ route('front.donasi.form') }}">Form Donasi</a></li>
                                     <li><a class="dropdown-item" href="{{ route('laporan_donasi') }}">Laporan Donasi</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <hr>
                             <li><a class="nav-link" href="{{ route('kepengurusan') }}">Kepengurusan</a></li>
                             <hr>
@@ -95,7 +98,11 @@
                                 </ul>
                             </li>
                             <hr>
-                            <li class="nav-item dropdown">
+                            <!-- Menu Kontak -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/contact') }}">Kontak</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Kontak
                                 </a>
@@ -103,7 +110,7 @@
                                     <li><a class="dropdown-item" href="{{ url('/contact') }}">Kontak</a></li>
                                     <li><a class="dropdown-item" href="{{ route('login') }}" style="color: blue;">Login admin</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <hr>
 
                         </ul>
